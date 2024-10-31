@@ -7,7 +7,7 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
       </Link>
-    </nav>
+         </nav>
   );
 };
 export default Navbar;
