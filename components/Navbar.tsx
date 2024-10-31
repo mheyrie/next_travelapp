@@ -8,9 +8,9 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
         <ul className="hidden h-full gap-12 lg:flex">
-            {NAV_LINKS.map((link,key)=>(
-                <li key={key}>{link.label}</li>
-            ))}
+          {NAV_LINKS.map((link) => (
+            <Link href={link.href} key={link.key}>{link.label}</Link>
+          ))}
         </ul>
       </Link>
     </nav>
