@@ -155,3 +155,48 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Hamburger  */
+.hamburger{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.top-ham, 
+.middle-ham,
+.bottom-ham{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #05927f;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.middle-ham{
+  transform: translateY(7px);
+}
+
+.bottom-ham{
+  transform: translateY(14px);
+}
+
+.open{
+  transform: rotate(90deg);
+  transform: translateX(0px);
+}
+
+.open .top-ham{
+  transform: rotate(90deg) translateY(6px) translate(6px);
+}
+.open .middle-ham{
+  display: none;
+}
+.open .bottom-ham{
+  transform: rotate(-90deg) translateY(6px) translate(-6px);
+}
