@@ -1,3 +1,4 @@
+'use client'
 import { NAV_LINKS } from "@/const";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,7 +50,9 @@ const Navbar = () => {
           </button>
         </nav>
         {isSidebarOpen ? (
-            <div className="md:hidden"></div>
+            <div className="md:hidden bg-slate-500 w-1/2 fixed top-20 h-dvh">
+                <div className="flex flex-col my-10 justify-center space-y-6 font-bold left-2 right-2"></div>
+            </div>
         ):("")}
     </>
   );
