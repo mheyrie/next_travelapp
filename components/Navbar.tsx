@@ -2,8 +2,10 @@ import { NAV_LINKS } from "@/const";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import { useState } from "react";
 
 const Navbar = () => {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
@@ -28,6 +30,8 @@ const Navbar = () => {
         variant='btn_dark_green'
         />
       </div>
+
+      {/* Hamburger  */}
       <Image src='/menu.svg' alt="menu" width={32} height={32} className="inline-block cursor-pointer lg:hidden" />
     </nav>
   );
