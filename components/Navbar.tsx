@@ -6,6 +6,10 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
+    const toggleHamburger = () =>{
+        setIsSidebarOpen(!isSidebarOpen)
+    }
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
