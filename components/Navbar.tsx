@@ -19,6 +19,9 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
+      <div className="lg:flexCenter hidden">
+        
+      </div>
     </nav>
   );
 };
