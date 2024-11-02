@@ -8,7 +8,7 @@ export const Hero = () => {
   const [watchVideo, setWatchVideo] = useState(false);
 
   return (
-    <section className="border-2 max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
       {/* Conditionally Render Media */}
       {watchVideo && <Media close={() => setWatchVideo(false)} />}
       
@@ -60,7 +60,7 @@ export const Hero = () => {
         </div>
         
         {/* Action Buttons */}
-        <div className="flex w-full gap-3 sm:flex-row">
+        <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Button type="button" title="Download App" variant="btn_green" />
           <Button 
             type="button" 
