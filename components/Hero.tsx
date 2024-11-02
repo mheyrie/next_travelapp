@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./Button";
 
 export const Hero = () => {
   return (
@@ -18,15 +19,38 @@ export const Hero = () => {
           Welcome to <em className="text-orange-700">Mhey</em>
           <em className="text-neutral-500">rie</em> Camping Area
         </h1>
-        <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolorum magnam ab eaque? Eius sint quisquam tempore. Autem necessitatibus perspiciatis nobis, cumque sit molestiae! Qui tempora non delectus necessitatibus placeat!
-        Tempore, non nobis voluptatum cumque fugiat perspiciatis quae animi! Laborum dolor distinctio tempora eaque, a excepturi fugit maxime! Suscipit facilis repellendus nulla rerum voluptatem cum dolore officia odit animi esse?</p>
+        <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+          dolorum magnam ab eaque? Eius sint quisquam tempore. Autem
+          necessitatibus perspiciatis nobis, cumque sit molestiae! Qui tempora
+          non delectus necessitatibus placeat! Tempore, non nobis voluptatum
+          cumque fugiat perspiciatis quae animi! Laborum dolor distinctio
+          tempora eaque, a excepturi fugit maxime! Suscipit facilis repellendus
+          nulla rerum voluptatem cum dolore officia odit animi esse?
+        </p>
         <div className="my-11 flex flex-wrap gap-5">
-            <div className="flex items-center gap-2">
-                {Array(5).fill(1).map((_, i)=>(
-                    <Image src='/star.svg' key={i} alt="start" width={24} height={24}/>
-                ))}
-            </div>
-            <p className="bold-16 lg:bold-20 text-blue-70/50">198k <span className="regular-16 lg:regular-20 ml-1 underline">Excellent Reviews</span></p>
+          <div className="flex items-center gap-2">
+            {Array(5)
+              .fill(1)
+              .map((_, i) => (
+                <Image
+                  src="/star.svg"
+                  key={i}
+                  alt="start"
+                  width={24}
+                  height={24}
+                />
+              ))}
+          </div>
+          <p className="bold-16 lg:bold-20 text-blue-70/50">
+            198k{" "}
+            <span className="regular-16 lg:regular-20 ml-1 underline cursor-pointer text-blue-70">
+              Excellent Reviews
+            </span>
+          </p>
+        </div>
+        <div className="flex w-full gap-3 sm:flex-row">
+          <Button type="button" title="Download App" variant="btn_green" />
         </div>
       </div>
     </section>
