@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Button from "./Button";
 import { useState } from "react";
@@ -11,7 +11,7 @@ export const Hero = () => {
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
       {/* Conditionally Render Media */}
       {watchVideo && <Media close={() => setWatchVideo(false)} />}
-      
+
       {/* Hero Image or Map */}
       <div className="hero-map" />
 
@@ -58,16 +58,16 @@ export const Hero = () => {
             </span>
           </p>
         </div>
-        
+
         {/* Action Buttons */}
         <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Button type="button" title="Download App" variant="btn_green" />
-          <Button 
-            type="button" 
-            title="How We Work?" 
-            variant="btn_white_text" 
-            icon="/play.svg" 
-            onClick={() => setWatchVideo(true)} 
+          <Button
+            type="button"
+            title="How We Work?"
+            variant="btn_white_text"
+            icon="/play.svg"
+            onClick={() => setWatchVideo(true)}
           />
         </div>
       </div>
