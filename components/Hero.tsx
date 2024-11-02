@@ -51,6 +51,7 @@ export const Hero = () => {
         </div>
         <div className="flex w-full gap-3 sm:flex-row">
           <Button type="button" title="Download App" variant="btn_green" />
+          <Button type="button" title="How We Work?" variant="btn_white_text" icon="/play.svg" />
         </div>
       </div>
     </section>
