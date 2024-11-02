@@ -5,14 +5,17 @@ import { useState } from "react";
 import { Media } from "./Media";
 
 export const Hero = () => {
-    const[watchVideo, setWatchVideo] = useState(false)
+  const [watchVideo, setWatchVideo] = useState(false);
 
   return (
     <section className="border-2 max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
-    {watchVideo && <Media close={()=>setWatchVideo(false)}/>}
+      {/* Conditionally Render Media */}
+      {watchVideo && <Media close={() => setWatchVideo(false)} />}
+      
+      {/* Hero Image or Map */}
       <div className="hero-map" />
-      {/* Left  */}
 
+      {/* Left Content */}
       <div className="relative z-20 flex flex-col flex-1 xl:w-1/2">
         <Image
           src="/camp.svg"
@@ -42,7 +45,7 @@ export const Hero = () => {
                 <Image
                   src="/star.svg"
                   key={i}
-                  alt="start"
+                  alt="star"
                   width={24}
                   height={24}
                 />
@@ -55,9 +58,17 @@ export const Hero = () => {
             </span>
           </p>
         </div>
+        
+        {/* Action Buttons */}
         <div className="flex w-full gap-3 sm:flex-row">
           <Button type="button" title="Download App" variant="btn_green" />
-          <Button type="button" title="How We Work?" variant="btn_white_text" icon="/play.svg" onClick={()=>setWatchVideo(true)} />
+          <Button 
+            type="button" 
+            title="How We Work?" 
+            variant="btn_white_text" 
+            icon="/play.svg" 
+            onClick={() => setWatchVideo(true)} 
+          />
         </div>
       </div>
     </section>

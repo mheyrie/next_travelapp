@@ -200,3 +200,33 @@ body {
 .open .bottom-ham{
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+.media-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.media-modal-content {
+  position: relative;
+  /* background: white; */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 800px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
