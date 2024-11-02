@@ -20,6 +20,13 @@ export const Hero = () => {
         </h1>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolorum magnam ab eaque? Eius sint quisquam tempore. Autem necessitatibus perspiciatis nobis, cumque sit molestiae! Qui tempora non delectus necessitatibus placeat!
         Tempore, non nobis voluptatum cumque fugiat perspiciatis quae animi! Laborum dolor distinctio tempora eaque, a excepturi fugit maxime! Suscipit facilis repellendus nulla rerum voluptatem cum dolore officia odit animi esse?</p>
+        <div className="my-11 flex flex-wrap gap-5">
+            <div className="flex items-center gap-2">
+                {Array(5).fill(1).map((_, i)=>(
+                    <Image src='/star.svg' key={i} alt="start" width={24} height={24}/>
+                ))}
+            </div>
+        </div>
       </div>
     </section>
   );
