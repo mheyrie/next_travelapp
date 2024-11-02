@@ -24,9 +24,9 @@ export const Media = ({ close }: MediaProps) => {
 
   return (
     <div className="media-modal-overlay">
-      <div className="media-modal-content" ref={modalRef}>
+      <div className="relative p-5 rounded-md max-w-[90%] w-[800px]" ref={modalRef}>
         {/* Close Button */}
-        <span role="button" className="close" onClick={close}>
+        <span role="button" className="absolute top-5 right-6 cursor-pointer text-white" onClick={close}>
           <Icon path={mdiWindowClose} size={1.5} />
         </span>
 
