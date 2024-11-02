@@ -23,7 +23,7 @@ export const Media = ({ close }: MediaProps) => {
   }, [close]);
 
   return (
-    <div className="media-modal-overlay">
+    <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 bg-slate-700/50">
       <div className="relative p-5 rounded-md max-w-[90%] w-[800px]" ref={modalRef}>
         {/* Close Button */}
         <span role="button" className="absolute top-5 right-6 cursor-pointer text-white" onClick={close}>
