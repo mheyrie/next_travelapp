@@ -50,14 +50,14 @@ const Navbar = () => {
         </button>
       </nav>
       {isSidebarOpen ? (
-        <div className="lg:hidden bg-slate-500 w-1/2 fixed top-20 h-dvh">
+        <div className="lg:hidden bg-slate-500 w-1/2 fixed top-20 h-dvh z-50">
           <div className="flex flex-col my-10 justify-center space-y-6 font-bold left-2 right-2">
             <ul className="flex flex-col gap-6 mt-8 px-6">
               {NAV_LINKS.map((link) => (
                 <Link
                   href={link.href}
                   key={link.key}
-                  className="regular-16 text-gray-700 cursor-pointer transition-all hover:font-bold"
+                  className="font-bold regular-16 text-gray-700 cursor-pointer transition-all hover:font-bold"
                   onClick={toggleHamburger} // Close sidebar on link click
                 >
                   {link.label}

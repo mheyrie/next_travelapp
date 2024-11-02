@@ -192,11 +192,11 @@ body {
 }
 
 .open .top-ham{
-  transform: rotate(90deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(6px) translate(6px);
 }
 .open .middle-ham{
   display: none;
 }
 .open .bottom-ham{
-  transform: rotate(-90deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
