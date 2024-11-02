@@ -26,6 +26,7 @@ export const Hero = () => {
                     <Image src='/star.svg' key={i} alt="start" width={24} height={24}/>
                 ))}
             </div>
+            <p className="bold-16 lg:bold-20 text-blue-70/50">198k <span className="regular-16 lg:regular-20 ml-1 underline">Excellent Reviews</span></p>
         </div>
       </div>
     </section>
