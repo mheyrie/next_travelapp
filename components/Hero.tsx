@@ -1,9 +1,15 @@
+'use client'
 import Image from "next/image";
 import Button from "./Button";
+import { useState } from "react";
+import { Media } from "./Media";
 
 export const Hero = () => {
+    const[watchVideo, setWatchVideo] = useState(false)
+
   return (
     <section className="border-2 max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    {watchVideo && <Media close={()=>setWatchVideo(false)}/>}
       <div className="hero-map" />
       {/* Left  */}
 
@@ -51,7 +57,7 @@ export const Hero = () => {
         </div>
         <div className="flex w-full gap-3 sm:flex-row">
           <Button type="button" title="Download App" variant="btn_green" />
-          <Button type="button" title="How We Work?" variant="btn_white_text" icon="/play.svg" />
+          <Button type="button" title="How We Work?" variant="btn_white_text" icon="/play.svg" onClick={()=>setWatchVideo(true)} />
         </div>
       </div>
     </section>
