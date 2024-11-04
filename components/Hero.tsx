@@ -70,6 +70,7 @@ export const Hero = () => {
             onClick={() => setWatchVideo(true)}
           />
         </div>
+        <div className=""></div>
       </div>
     </section>
   );
