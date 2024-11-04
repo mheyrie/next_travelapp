@@ -84,11 +84,11 @@ export const Hero = () => {
           <div className="flexBetween">
             <div className="flex flex-col">
               <p className="text-gray-20 regular-16 block">Distance</p>
-              <p className="text-white regular-16">173.28 mi</p>
+              <p className="text-white regular-16 bold-16">173.28 mi</p>
             </div>
             <div className="flex flex-col">
-              <p className="text-gray-20 regular-16 block">Distance</p>
-              <p className="text-white regular-16">173.28 mi</p>
+              <p className="text-gray-20 regular-16 block">Elevation</p>
+              <p className="text-white regular-16 bold-16">2.004 km</p>
             </div>
           </div>
         </div>
