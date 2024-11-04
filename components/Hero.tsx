@@ -70,7 +70,7 @@ export const Hero = () => {
             onClick={() => setWatchVideo(true)}
           />
         </div>
-        <div className=""></div>
+        <div className="relative flex flex-1 items-start border-2 "></div>
       </div>
     </section>
   );
