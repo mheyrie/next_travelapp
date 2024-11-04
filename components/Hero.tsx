@@ -76,14 +76,19 @@ export const Hero = () => {
           <div className="flex flex-col">
             <div className="flexBetween">
               <p className="text-gray-20 regular-16">Location</p>
-              <Image src='/close.svg' alt="Close" width={24} height={24} />
+              <Image src="/close.svg" alt="Close" width={24} height={24} />
             </div>
             <p className="bold-20 text-white">Crescent Avenue</p>
-            <div className="flexBetween">
-              <div className="flex flex-col">
-                <p className="text-gray-20 regular-16">Distance</p>
-                <p className="text-gray-20 regular-16">173.28 mi</p>
-                            </div>
+          </div>
+
+          <div className="flexBetween">
+            <div className="flex flex-col">
+              <p className="text-gray-20 regular-16 block">Distance</p>
+              <p className="text-white regular-16">173.28 mi</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-gray-20 regular-16 block">Distance</p>
+              <p className="text-white regular-16">173.28 mi</p>
             </div>
           </div>
         </div>
