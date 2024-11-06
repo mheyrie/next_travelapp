@@ -20,6 +20,7 @@ const CampSite = ({subtitle, backgroundImage, peopleJoined, title}:(CampProps)) 
             <p className="bold-14 text-white">{subtitle}</p>
           </div>
         </div>
+        <div className="flexCenter gap-6"><span className="flex space-x-4 overflow-hidden"></span></div>
       </div>
     </div>
   )
@@ -27,7 +28,7 @@ const CampSite = ({subtitle, backgroundImage, peopleJoined, title}:(CampProps)) 
 
 export default function Camp() {
   return (
-    <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20 border border-green-600">
+    <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
       <div className="hide-scrollbar flex w-full items-start h-[340px] justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <CampSite 
         backgroundImage='bg-bg-img-1'
