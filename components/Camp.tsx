@@ -17,7 +17,7 @@ const CampSite = ({subtitle, backgroundImage, peopleJoined, title}:(CampProps)) 
           </div>
           <div className="flex flex-col gap-1">
             <h4 className="bold-18 text-white">{title}</h4>
-            <p className="">{subtitle}</p>
+            <p className="bold-14 text-white">{subtitle}</p>
           </div>
         </div>
       </div>
