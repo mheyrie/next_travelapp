@@ -15,6 +15,10 @@ const CampSite = ({subtitle, backgroundImage, peopleJoined, title}:(CampProps)) 
           <div className="rounded-full bg-green-50 p-4">
             <Image src='/folded-map.svg' alt='map' width={24} height={24} />
           </div>
+          <div className="flex flex-col gap-1">
+            <h4 className="bold-18 text-white">{title}</h4>
+            <p className="">{subtitle}</p>
+          </div>
         </div>
       </div>
     </div>
