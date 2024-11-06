@@ -58,8 +58,8 @@ export default function Camp() {
         />
         <CampSite
           backgroundImage="bg-bg-img-1"
-          title="Pamhaa Resort Corner"
-          subtitle="Prigen, Pasuran"
+          title="Mountain View Camp"
+          subtitle="Somewhere in the Wilderness"
           peopleJoined="50+ Joined"
         />{" "}
       </div>
