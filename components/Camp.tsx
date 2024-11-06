@@ -8,7 +8,7 @@ interface CampProps  {
 const CampSite = ({subtitle, backgroundImage, peopleJoined, title}:(CampProps)) => {
   return(
     <div className={`h-full w-full min-w-[1100px] ${backgroundImage}`}>
-      <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20"></div>
+      <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10"></div>
     </div>
   )
 }
