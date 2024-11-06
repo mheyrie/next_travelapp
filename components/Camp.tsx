@@ -57,7 +57,7 @@ export default function Camp() {
           peopleJoined="50+ Joined"
         />
         <CampSite
-          backgroundImage="bg-bg-img-1"
+          backgroundImage="bg-bg-img-2"
           title="Mountain View Camp"
           subtitle="Somewhere in the Wilderness"
           peopleJoined="50+ Joined"
