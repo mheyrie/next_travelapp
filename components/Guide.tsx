@@ -15,7 +15,9 @@ export default function Guide() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
-          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">Guide You to Easy Path</h2>
+          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
+            Guide You to Easy Path
+          </h2>
           <p className="regular-16 text-gray-30 xl:max-w-[520px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             consectetur libero nemo, cum neque excepturi dolorem quas aperiam?
@@ -27,13 +29,13 @@ export default function Guide() {
       </div>
 
       <div className="flexCenter max-container relative w-full">
-      <Image
-            className="w-full object-cover object-center 2xl:rounded-5xl"
-            src="/boat.png"
-            alt="boat"
-            width={50}
-            height={50}
-          />
+        <Image
+          className="w-full object-cover object-center 2xl:rounded-5xl"
+          src="/boat.png"
+          alt="boat"
+          width={50}
+          height={50}
+        />
       </div>
     </section>
   );
