@@ -1,5 +1,5 @@
 export default function Guide() {
   return (
-    <div>Guide</div>
+    <section className="">Guide</section>
   )
 }
