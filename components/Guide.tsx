@@ -16,7 +16,7 @@ export default function Guide() {
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">Guide You to Easy Path</h2>
-          <p>
+          <p className="regular-16 text-gray-30 xl:max-w-[520px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             consectetur libero nemo, cum neque excepturi dolorem quas aperiam?
             Labore nam rem iusto officia perferendis voluptates cumque obcaecati
