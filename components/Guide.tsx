@@ -25,6 +25,16 @@ export default function Guide() {
           </p>
         </div>
       </div>
+
+      <div className="flexCenter max-container relative w-full">
+      <Image
+            className="w-full object-cover object-center 2xl:rounded-5xl"
+            src="/boat.png"
+            alt="boat"
+            width={50}
+            height={50}
+          />
+      </div>
     </section>
   );
 }
