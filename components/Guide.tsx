@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Guide() {
   return (
     <section className="flexCenter flex-col">
-      <div className="border-1 border-red-600 padding-container max-container w-full p-24">
+      <div className="border-1 border-red-600 padding-container max-container w-full pb-24">
         <Image
           className="camp-quote"
           src="/camp.svg"
@@ -12,7 +12,7 @@ export default function Guide() {
           height={50}
         />
         <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Lorem ipsum, dolor sit.
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
@@ -33,8 +33,8 @@ export default function Guide() {
           className="w-full object-cover object-center 2xl:rounded-5xl"
           src="/boat.png"
           alt="boat"
-          width={50}
-          height={50}
+          width={1440}
+          height={580}
         />
       </div>
     </section>
