@@ -31,7 +31,7 @@ export default function Guide() {
           height={580}
         />
         <div> 
-          <h2></h2>
+          <h2>Test</h2>
           This is a section</div>
       </div>
     </section>
