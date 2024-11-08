@@ -30,7 +30,9 @@ export default function Guide() {
           width={1440}
           height={580}
         />
-        <div>This is a section</div>
+        <div> 
+          <h2></h2>
+          This is a section</div>
       </div>
     </section>
   );
