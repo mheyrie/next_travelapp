@@ -30,7 +30,7 @@ export default function Guide() {
           width={1440}
           height={580}
         />
-        <div className=""> 
+        <div className="absolute flex bg-white"> 
           <h2>Test</h2>
           This is a section</div>
       </div>
