@@ -30,7 +30,7 @@ export default function Guide() {
           width={1440}
           height={580}
         />
-        <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md" > 
+        <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%]" > 
           <h2>Test</h2>
           This is a section</div>
       </div>
