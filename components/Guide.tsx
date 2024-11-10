@@ -37,6 +37,7 @@ export default function Guide() {
                 <p className="">Destination</p>
                 <p className="">48 mins</p>
               </div>
+              <p className="">Agus Calintine</p>
             </div>
           </div>
         </div>
