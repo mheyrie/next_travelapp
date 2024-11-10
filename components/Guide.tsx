@@ -32,7 +32,9 @@ export default function Guide() {
         />
         <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
           <div className="flexBetween flex-col">
-            <div className="flex w-full flex-col"></div>
+            <div className="flex w-full flex-col">
+              <div className="flexBetween w-full"></div>
+            </div>
           </div>
         </div>
       </div>
