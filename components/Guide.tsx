@@ -40,9 +40,9 @@ export default function Guide() {
               <p className="mt-2 bold-20">Agus Calintine</p>
             </div>
             <div className="flex w-full flex-col">
-                              <p className="regular-16 text-gray-20">Destination</p>
-                <p className="bold-16 text-green-50">48 mins</p>
-                          <p className="mt-2 bold-20">Agus Calintine</p>
+              <p className="regular-16 text-gray-20">Start Track</p>
+              <p className="bold-16 text-green-50">48 mins</p>
+              <p className="mt-2 bold-20">Agus Calintine</p>
             </div>
           </div>
         </div>
