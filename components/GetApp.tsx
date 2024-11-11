@@ -11,7 +11,7 @@ export default function GetApp() {
           <p className="regular-16 text-gray-10">
             Available on iOS and Android
           </p>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col xl:flex-row w-full gap-3 whitespace-nowrap">
             <Button
               type="button"
               title="Download App"
