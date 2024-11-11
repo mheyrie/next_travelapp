@@ -1,5 +1,5 @@
 export default function GetApp() {
   return (
-    <div>GetApp</div>
+    <section className="">GetApp</section>
   )
 }
