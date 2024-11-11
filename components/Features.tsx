@@ -26,11 +26,13 @@ export default function Features() {
             <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
           <ul className="">
-            {FEATURES.map((feature)=>(
-              <FeatureItem key={feature.title } title = {feature.title}
-              icon={feature.icon}
-              variant={feature.variant}
-              description={feature.description}
+            {FEATURES.map((feature) => (
+              <FeatureItem
+                key={feature.title}
+                title={feature.title}
+                icon={feature.icon}
+                variant={feature.variant}
+                description={feature.description}
               />
             ))}
           </ul>
@@ -40,8 +42,25 @@ export default function Features() {
   );
 }
 
-const FeatureItem = ({title})=>{
-  return(
-    <div>{title}</div>
-  )
-}
+type FeatureItem = {
+  title: string;
+  icon: string;
+  variant: string;
+  description: string;
+};
+const FeatureItem = ({ title, icon, variant, description }: FeatureItem) => {
+  return (
+    <li className="flex w-full flex-1 flex-col items-start">
+      <div className="rounded-full p-4 lg:p-7 bg-green-50">
+        <Image
+          src={icon}
+          alt="map"
+          width={28}
+          height={28}
+          className=""
+        />
+      </div>
+      {title}
+    </li>
+  );
+};
