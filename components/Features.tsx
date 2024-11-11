@@ -1,3 +1,4 @@
+import { FEATURES } from "@/const";
 import Image from "next/image";
 
 export default function Features() {
@@ -15,15 +16,20 @@ export default function Features() {
         </div>
         <div className="z-20 flex w-full flex-col lg:w-[60%]">
           <div className="relative">
-          <Image
-            src="/camp.svg"
-            alt="camp"
-            width={50}
-            height={50}
-            className="absolute left-[-5px]"
-          />
-          <h2 className="bold-40 lg:bold-64">Our Features</h2>
+            <Image
+              src="/camp.svg"
+              alt="camp"
+              width={50}
+              height={50}
+              className="absolute left-[-5px] top-[-35px]"
+            />
+            <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
+          <ul className="">
+            {FEATURES.map((feature)=>(
+              <FeatureItem/>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
