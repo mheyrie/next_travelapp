@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "./Button";
 
 export default function GetApp() {
@@ -27,6 +28,9 @@ export default function GetApp() {
               full
             />
           </div>
+        </div>
+        <div className="flex flex-1 items-center justify-end">
+          <Image src="/phones.png" alt="camp" width={550} height={870} />
         </div>
       </div>
     </section>
