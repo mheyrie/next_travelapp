@@ -53,6 +53,7 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
         <Image src={icon} alt="map" width={28} height={28} className="" />
       </div>
       <h2 className="bold-20 lg:bold-32 mt-5 capitalize">{title}</h2>
+      <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">{description}</p>
     </li>
   );
 };
