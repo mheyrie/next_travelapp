@@ -27,7 +27,11 @@ export default function Features() {
           </div>
           <ul className="">
             {FEATURES.map((feature)=>(
-              <FeatureItem title = {feature.title}/>
+              <FeatureItem key={feature.title } title = {feature.title}
+              icon={feature.icon}
+              variant={feature.variant}
+              description={feature.description}
+              />
             ))}
           </ul>
         </div>
