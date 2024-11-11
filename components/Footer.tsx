@@ -1,3 +1,4 @@
+import { FOOTER_LINKS } from "@/const"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -15,10 +16,26 @@ const Footer = () => {
           height={29}
         />
           </Link>
-          <div className="flex flex-wrap sm:justify-between md:flex-1"></div>
+          <div className="flex flex-wrap sm:justify-between md:flex-1">
+            {FOOTER_LINKS.map((columns)=>(
+              <FooterColumn></FooterColumn>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
   )
 }
 export default Footer
+
+
+type FooterColumnProps={
+  title:string;
+  children:string;
+}
+
+const FooterColumn = ({title, children}:FooterColumnProps)=>{
+<div className="">
+  <h4 className="">{title}</h4>
+</div>
+}
