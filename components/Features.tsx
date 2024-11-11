@@ -1,5 +1,5 @@
 export default function Features() {
   return (
-    <section>Features</section>
+    <section className="">Features</section>
   )
 }
