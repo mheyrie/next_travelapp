@@ -20,19 +20,12 @@ export default function GetApp() {
           />
           <Button
             type="button"
-            title="Download App"
+            title="Play Store"
             icon="/android.svg"
-            variant="btn_white"
+            variant="btn_dark_green_outline"
             full
           />
-          <Button
-            type="button"
-            title="Downlaod App"
-            icon="/apple.svg"
-            variant="btn_white"
-            full
-          />
-        </div>
+                 </div>
       </div>
     </section>
   );
