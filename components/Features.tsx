@@ -27,11 +27,17 @@ export default function Features() {
           </div>
           <ul className="">
             {FEATURES.map((feature)=>(
-              <FeatureItem/>
+              <FeatureItem title = {feature.title}/>
             ))}
           </ul>
         </div>
       </div>
     </section>
   );
+}
+
+const FeatureItem = ({title})=>{
+  return(
+    <div>{title}</div>
+  )
 }
