@@ -5,10 +5,11 @@ type ButtonProps = {
   title: string;
   icon?: string;
   variant: string;
+  full?: boolean;
   onClick?: ()=>void;
   // variant: "btn_dark_green" | "btn_green";
 };
-const Button = ({ type, title, icon, variant, onClick }: ButtonProps) => {
+const Button = ({ type, title, icon, variant,full, onClick }: ButtonProps) => {
   return (
     <button type={type} className={`flexCenter gap-3 rounded-full border ${variant}`}  onClick={onClick}>
       {icon && <Image src={icon} alt={title} width={24} height={24} />}
