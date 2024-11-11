@@ -11,21 +11,23 @@ export default function GetApp() {
           <p className="regular-16 text-gray-10">
             Available on iOS and Android
           </p>
-          <Button
-            type="button"
-            title="Download App"
-            icon="/apple.svg"
-            variant="btn_white"
-            full
-          />
-          <Button
-            type="button"
-            title="Play Store"
-            icon="/android.svg"
-            variant="btn_dark_green_outline"
-            full
-          />
-                 </div>
+          <div className="flex flex-col w-full">
+            <Button
+              type="button"
+              title="Download App"
+              icon="/apple.svg"
+              variant="btn_white"
+              full
+            />
+            <Button
+              type="button"
+              title="Play Store"
+              icon="/android.svg"
+              variant="btn_dark_green_outline"
+              full
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
