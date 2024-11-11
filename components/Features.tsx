@@ -13,7 +13,17 @@ export default function Features() {
             className="feature-phone"
           />
         </div>
-        <div className="z-20 flex w-full flex-col lg:w-[60%]"></div>
+        <div className="z-20 flex w-full flex-col lg:w-[60%]">
+          <div className="relative">
+          <Image
+            src="/phone.png"
+            alt="phone"
+            width={440}
+            height={1000}
+            className="feature-phone"
+          />
+          </div>
+        </div>
       </div>
     </section>
   );
